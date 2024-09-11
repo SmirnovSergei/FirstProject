@@ -8,24 +8,27 @@
 import Foundation
 
 class Person {
-    var name = ""
-    var lastName = ""
+    var name: String
+    var lastName: String
     
     var fullName: String {
         lastName + " " + name
     }
+    
+    init(name: String, lastName: String) {
+        self.name = name
+        self.lastName = name
+    }
 }
 
-class Helper: Person {
-    private var people: [String] = []
+class Helper {
+    private var people: [Person] = []
       
-    func addPerson(name: String, lastName: String) {
-        self.name = name
-        self.lastName = lastName
-        people.append(fullName)
+    func addPerson(_ person: Person) {
+        people.append(person)
     }
     
-    func getPeople() -> [String] {
+    func getPeople() -> [Person] {
         people
     }
 }

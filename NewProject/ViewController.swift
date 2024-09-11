@@ -10,8 +10,8 @@ class ViewController: UIViewController {
     }
     
     private func updateTeam() {
-        helper.addPerson(name: "Сергей", lastName: "Смирнов")
-        helper.addPerson(name: "Иван", lastName: "Иванов")
+        helper.addPerson(Person(name: "Сергей", lastName: "Смирнов"))
+        helper.addPerson(Person(name: "Иван", lastName: "Иванов"))
         
         for person in helper.getPeople() {
             print(person)
