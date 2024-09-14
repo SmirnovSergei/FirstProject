@@ -11,13 +11,17 @@ class Person {
     var name: String
     var lastName: String
     
-    var fullName: String {
-        lastName + " " + name
-    }
-    
     init(name: String, lastName: String) {
         self.name = name
         self.lastName = name
+    }
+    
+    func getFullName() -> String {
+        var fullName: String {
+            lastName + " " + name
+        }
+        
+        return fullName
     }
 }
 
