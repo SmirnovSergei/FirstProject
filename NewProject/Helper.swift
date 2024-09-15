@@ -7,25 +7,6 @@
 
 import Foundation
 
-struct Person {
-    let name: String
-    let lastName: String
-    
-    func getFullName() -> String {
-        var fullName: String {
-            lastName + " " + name
-        }
-        
-        return fullName
-    }
-}
-
-struct User {
-    let login: String
-    let password: String
-    let userName: Person
-}
-
 class Helper {
     private var people: [User] = []
       
