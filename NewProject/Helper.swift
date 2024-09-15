@@ -7,14 +7,9 @@
 
 import Foundation
 
-class Person {
-    var name: String
-    var lastName: String
-    
-    init(name: String, lastName: String) {
-        self.name = name
-        self.lastName = name
-    }
+struct Person {
+    let name: String
+    let lastName: String
     
     func getFullName() -> String {
         var fullName: String {
@@ -25,14 +20,20 @@ class Person {
     }
 }
 
+struct User {
+    let login: String
+    let password: String
+    let userName: Person
+}
+
 class Helper {
-    private var people: [Person] = []
+    private var people: [User] = []
       
-    func addPerson(_ person: Person) {
+    func addPerson(_ person: User) {
         people.append(person)
     }
     
-    func getPeople() -> [Person] {
+    func getPeople() -> [User] {
         people
     }
 }
