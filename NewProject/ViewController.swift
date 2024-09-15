@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         helper.addPerson(Person(name: "Иван", lastName: "Иванов"))
         
         for person in helper.getPeople() {
-            print(person.getFullName())
+            print(person.fullName)
         }
     }
 }
