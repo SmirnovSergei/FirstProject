@@ -10,7 +10,7 @@ class ViewController: UIViewController {
     }
     
     private func updateTeam() {
-        helper.addPerson(
+        helper.addUser(
             User(
                 login: "SmirnovS",
                 password: "Password-1",
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
             )
         )
         
-        helper.addPerson(
+        helper.addUser(
             User(
                 login: "IvanovI",
                 password: "Password-2",
@@ -32,8 +32,8 @@ class ViewController: UIViewController {
             )
         )
         
-        for person in helper.getPeople() {
-            print(person.userName.fullName)
+        for user in helper.getPeople() {
+            print(user.userName.fullName)
         }
     }
 }

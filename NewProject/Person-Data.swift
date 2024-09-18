@@ -20,5 +20,5 @@ struct User {
     let login: String
     let password: String
     
-    var userName: Person
+    let userName: Person
 }
