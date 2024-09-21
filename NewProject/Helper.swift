@@ -14,6 +14,14 @@ class Helper {
         people.append(user)
     }
     
+//    func addMultipleUsers(numberOfUsers: Int) {
+//        var newUser = addUser
+//
+//        for number in 1...numberOfUsers {
+//            newUser
+//        }
+//    }
+    
     func getPeople() -> [User] {
         people
     }
