@@ -2,7 +2,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private let helper = Helper()
+    private let userRepository = UserRepository()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -12,30 +12,9 @@ class ViewController: UIViewController {
     }
     
     private func updateTeam() {
-        helper.addUser(
-            User(
-                login: "SmirnovS",
-                password: "Password-1",
-                userName: Person(
-                    name: "Сергей",
-                    lastName: "Смирнов"
-                )
-            )
-        )
-        
-        helper.addUser(
-            User(
-                login: "IvanovI",
-                password: "Password-2",
-                userName: Person(
-                    name: "Иван",
-                    lastName: "Иванов"
-                )
-            )
-        )
-        
-        for user in helper.getPeople() {
+        for user in userRepository.getUsers() {
             print(user.userName.fullName)
         }
     }
 }
+
