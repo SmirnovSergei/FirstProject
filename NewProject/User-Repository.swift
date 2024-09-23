@@ -8,54 +8,39 @@
 import Foundation
 
 class UserRepository {
-    private let helper = Helper()
     
-    func getUsers() -> [User] {
-        helper.addUser(
-            User(
-                login: "SmirnovS",
-                password: "Password-1",
-                userName: Person(
-                    name: "Сергей",
-                    lastName: "Смирнов"
-                )
+    func getUsersRequest() -> [User] {
+        [User(
+            login: "SmirnovS",
+            password: "Password-1",
+            userName: Person(
+                name: "Сергей",
+                lastName: "Смирнов"
             )
-        )
-        
-        helper.addUser(
-            User(
-                login: "IvanovI",
-                password: "Password-2",
-                userName: Person(
-                    name: "Иван",
-                    lastName: "Иванов"
-                )
+        ),
+         User(
+            login: "IvanovI",
+            password: "Password-2",
+            userName: Person(
+                name: "Иван",
+                lastName: "Иванов"
             )
-        )
-        
-        helper.addUsers([
-            User(
-                login: "SemenovS",
-                password: "Password-3",
-                userName: Person(
-                    name: "Семен",
-                    lastName: "Семенов"
-                )
-            ),
-            User(
-                login: "PetrovP",
-                password: "Password-4",
-                userName: Person(
-                    name: "Петр",
-                    lastName: "Петров"
-                )
+         ),
+         User(
+            login: "SemenovS",
+            password: "Password-3",
+            userName: Person(
+                name: "Семен",
+                lastName: "Семенов"
             )
-        ])
-        
-        var userRequest: [User] {
-            helper.getPeople()
-        }
-    return userRequest
-        
+         ),
+         User(
+            login: "PetrovP",
+            password: "Password-4",
+            userName: Person(
+                name: "Петр",
+                lastName: "Петров"
+            )
+         )]
     }
 }

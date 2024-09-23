@@ -20,7 +20,7 @@ class Helper {
         }
     }
     
-    func getPeople() -> [User] {
+    func getUsers() -> [User] {
         people
     }
 }
