@@ -5,7 +5,8 @@ class ViewController: UIViewController {
     private let helper = Helper()
     private let userRepository = UserRepository()
     private let textLabel = UILabel()
-    private let customButton = UIButton()
+    private let redCustomButton = CustomButton(buttonTitle: "Show New User", buttonColor: .red, showShadow: false)
+    private let greenCustomButton = CustomButton(buttonTitle: "Hide User", buttonColor: .green, showShadow: true)
     private let stackView = UIStackView()
         
     override func viewDidLoad() {
@@ -16,10 +17,7 @@ class ViewController: UIViewController {
         updateTeam()
         
         setupLabel()
-        setupButton()
         setupStackView()
-//        view.addSubview(textLabel)
-//        view.addSubview(customButton)
         view.addSubview(stackView)
         setupLayout()
     }
@@ -38,23 +36,17 @@ class ViewController: UIViewController {
         textLabel.font = .systemFont(ofSize: 25)
         textLabel.textColor = .blue
         textLabel.textAlignment = .center
-//        textLabel.frame = CGRect(x: 100, y: 100, width: 230, height: 50)
     }
-        
-    private func setupButton() {
-        customButton.setTitle("Show FullName", for: .normal)
-        customButton.setTitleColor(.black, for: .normal)
-        customButton.backgroundColor = .green
-//        customButton.frame = CGRect(x: 100, y: 150, width: 150, height: 50)
-    }
-    
+
     private func setupStackView() {
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.alignment = .fill
+        stackView.spacing = 10
         
         stackView.addArrangedSubview(textLabel)
-        stackView.addArrangedSubview(customButton)
+        stackView.addArrangedSubview(redCustomButton)
+        stackView.addArrangedSubview(greenCustomButton)
     }
     
     private func setupLayout() {
@@ -64,7 +56,7 @@ class ViewController: UIViewController {
             stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             stackView.widthAnchor.constraint(equalToConstant: 230),
-            stackView.heightAnchor.constraint(equalToConstant: 100)
+            stackView.heightAnchor.constraint(equalToConstant: 150)
         ])
     }
 }
