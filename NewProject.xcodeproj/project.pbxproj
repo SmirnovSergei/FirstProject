@@ -10,6 +10,7 @@
 		051E6C022C9F407100792CC4 /* User-Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E6C012C9F407100792CC4 /* User-Repository.swift */; };
 		054A6A132C8DD43B008653CB /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054A6A122C8DD43B008653CB /* Helper.swift */; };
 		0561617F2CAC6F570092F828 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0561617E2CAC6F570092F828 /* CustomButton.swift */; };
+		05839AE42CAF30360014E54E /* Add-Stack-Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05839AE32CAF30360014E54E /* Add-Stack-Views.swift */; };
 		05DD1EF92C8D98FB0058E391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD1EF82C8D98FB0058E391 /* AppDelegate.swift */; };
 		05DD1EFB2C8D98FB0058E391 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD1EFA2C8D98FB0058E391 /* SceneDelegate.swift */; };
 		05DD1EFD2C8D98FB0058E391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD1EFC2C8D98FB0058E391 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		051E6C012C9F407100792CC4 /* User-Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User-Repository.swift"; sourceTree = "<group>"; };
 		054A6A122C8DD43B008653CB /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		0561617E2CAC6F570092F828 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		05839AE32CAF30360014E54E /* Add-Stack-Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add-Stack-Views.swift"; sourceTree = "<group>"; };
 		05DD1EF52C8D98FB0058E391 /* NewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05DD1EF82C8D98FB0058E391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05DD1EFA2C8D98FB0058E391 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				05DD1EFA2C8D98FB0058E391 /* SceneDelegate.swift */,
 				05DD1EFC2C8D98FB0058E391 /* ViewController.swift */,
 				0561617E2CAC6F570092F828 /* CustomButton.swift */,
+				05839AE32CAF30360014E54E /* Add-Stack-Views.swift */,
 				05FBF6802C96E483008193D2 /* Person-Data.swift */,
 				054A6A122C8DD43B008653CB /* Helper.swift */,
 				051E6C012C9F407100792CC4 /* User-Repository.swift */,
@@ -149,6 +152,7 @@
 				05DD1EFD2C8D98FB0058E391 /* ViewController.swift in Sources */,
 				05FBF6812C96E483008193D2 /* Person-Data.swift in Sources */,
 				051E6C022C9F407100792CC4 /* User-Repository.swift in Sources */,
+				05839AE42CAF30360014E54E /* Add-Stack-Views.swift in Sources */,
 				05DD1EF92C8D98FB0058E391 /* AppDelegate.swift in Sources */,
 				0561617F2CAC6F570092F828 /* CustomButton.swift in Sources */,
 				05DD1EFB2C8D98FB0058E391 /* SceneDelegate.swift in Sources */,

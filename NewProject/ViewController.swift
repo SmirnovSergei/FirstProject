@@ -7,8 +7,10 @@ class ViewController: UIViewController {
     private let textLabel = UILabel()
     private let redCustomButton = CustomButton(buttonTitle: "Show New User", buttonColor: .red, showShadow: false)
     private let greenCustomButton = CustomButton(buttonTitle: "Hide User", buttonColor: .green, showShadow: true)
+    //private let viewsList =
     private let stackView = UIStackView()
-        
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         helper.addUsers(userRepository.getUsersRequest())
@@ -43,10 +45,8 @@ class ViewController: UIViewController {
         stackView.distribution = .fillEqually
         stackView.alignment = .fill
         stackView.spacing = 10
-        
-        stackView.addArrangedSubview(textLabel)
-        stackView.addArrangedSubview(redCustomButton)
-        stackView.addArrangedSubview(greenCustomButton)
+
+        stackView.addStackViews(textLabel, redCustomButton, greenCustomButton)
     }
     
     private func setupLayout() {

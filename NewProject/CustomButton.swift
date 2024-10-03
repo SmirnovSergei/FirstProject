@@ -16,6 +16,7 @@ class CustomButton: UIView {
         
         if showShadow {
             setupShadow()
+            layoutSubviews()
         }
         
         setupLayout()
@@ -52,4 +53,9 @@ class CustomButton: UIView {
         ])
     }
 
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        let shadowPath = UIBezierPath(rect: bounds)
+        layer.shadowPath = shadowPath.cgPath
+    }
 }
