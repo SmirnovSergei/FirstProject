@@ -26,7 +26,10 @@ class CustomButton: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+}
+
+// MARK: - Setup View
+extension CustomButton {
     private func setupButton(buttonTitle: String, buttonColor: UIColor, showShadow: Bool) {
         customButton.setTitle(buttonTitle, for: .normal)
         customButton.setTitleColor(.black, for: .normal)
@@ -41,7 +44,10 @@ class CustomButton: UIView {
         layer.shadowOffset = CGSize(width: 5, height: 5)
         layer.shadowRadius = 10
     }
-    
+}
+
+// MARK: - Setup Layout
+extension CustomButton {
     private func setupLayout() {
         customButton.translatesAutoresizingMaskIntoConstraints = false
         

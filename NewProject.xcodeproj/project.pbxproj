@@ -11,6 +11,7 @@
 		054A6A132C8DD43B008653CB /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054A6A122C8DD43B008653CB /* Helper.swift */; };
 		0561617F2CAC6F570092F828 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0561617E2CAC6F570092F828 /* CustomButton.swift */; };
 		05839AE42CAF30360014E54E /* Add-Stack-Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05839AE32CAF30360014E54E /* Add-Stack-Views.swift */; };
+		05839AE62CAF43300014E54E /* Add-Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05839AE52CAF43300014E54E /* Add-Views.swift */; };
 		05DD1EF92C8D98FB0058E391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD1EF82C8D98FB0058E391 /* AppDelegate.swift */; };
 		05DD1EFB2C8D98FB0058E391 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD1EFA2C8D98FB0058E391 /* SceneDelegate.swift */; };
 		05DD1EFD2C8D98FB0058E391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD1EFC2C8D98FB0058E391 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		054A6A122C8DD43B008653CB /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		0561617E2CAC6F570092F828 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		05839AE32CAF30360014E54E /* Add-Stack-Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add-Stack-Views.swift"; sourceTree = "<group>"; };
+		05839AE52CAF43300014E54E /* Add-Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add-Views.swift"; sourceTree = "<group>"; };
 		05DD1EF52C8D98FB0058E391 /* NewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05DD1EF82C8D98FB0058E391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05DD1EFA2C8D98FB0058E391 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05032DC62CB1251C008042F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				05DD1EFC2C8D98FB0058E391 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		05032DC72CB1253A008042F9 /* CustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				0561617E2CAC6F570092F828 /* CustomButton.swift */,
+			);
+			path = CustomElements;
+			sourceTree = "<group>";
+		};
+		05032DC82CB1257A008042F9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				05FBF6802C96E483008193D2 /* Person-Data.swift */,
+				054A6A122C8DD43B008653CB /* Helper.swift */,
+				051E6C012C9F407100792CC4 /* User-Repository.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		05032DC92CB1259F008042F9 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				05DD1F032C8D98FD0058E391 /* LaunchScreen.storyboard */,
+				05DD1F012C8D98FD0058E391 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		05032DCA2CB125E0008042F9 /* Extenaions */ = {
+			isa = PBXGroup;
+			children = (
+				05839AE52CAF43300014E54E /* Add-Views.swift */,
+				05839AE32CAF30360014E54E /* Add-Stack-Views.swift */,
+			);
+			path = Extenaions;
+			sourceTree = "<group>";
+		};
 		05DD1EEC2C8D98FB0058E391 = {
 			isa = PBXGroup;
 			children = (
@@ -66,14 +112,11 @@
 			children = (
 				05DD1EF82C8D98FB0058E391 /* AppDelegate.swift */,
 				05DD1EFA2C8D98FB0058E391 /* SceneDelegate.swift */,
-				05DD1EFC2C8D98FB0058E391 /* ViewController.swift */,
-				0561617E2CAC6F570092F828 /* CustomButton.swift */,
-				05839AE32CAF30360014E54E /* Add-Stack-Views.swift */,
-				05FBF6802C96E483008193D2 /* Person-Data.swift */,
-				054A6A122C8DD43B008653CB /* Helper.swift */,
-				051E6C012C9F407100792CC4 /* User-Repository.swift */,
-				05DD1F012C8D98FD0058E391 /* Assets.xcassets */,
-				05DD1F032C8D98FD0058E391 /* LaunchScreen.storyboard */,
+				05032DC62CB1251C008042F9 /* ViewController */,
+				05032DC72CB1253A008042F9 /* CustomElements */,
+				05032DC82CB1257A008042F9 /* Services */,
+				05032DC92CB1259F008042F9 /* Resourses */,
+				05032DCA2CB125E0008042F9 /* Extenaions */,
 				05DD1F062C8D98FD0058E391 /* Info.plist */,
 			);
 			path = NewProject;
@@ -153,6 +196,7 @@
 				05FBF6812C96E483008193D2 /* Person-Data.swift in Sources */,
 				051E6C022C9F407100792CC4 /* User-Repository.swift in Sources */,
 				05839AE42CAF30360014E54E /* Add-Stack-Views.swift in Sources */,
+				05839AE62CAF43300014E54E /* Add-Views.swift in Sources */,
 				05DD1EF92C8D98FB0058E391 /* AppDelegate.swift in Sources */,
 				0561617F2CAC6F570092F828 /* CustomButton.swift in Sources */,
 				05DD1EFB2C8D98FB0058E391 /* SceneDelegate.swift in Sources */,

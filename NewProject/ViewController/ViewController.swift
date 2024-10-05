@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         setupLabel()
         setupStackView()
-        view.addSubview(stackView)
+        view.addViews(stackView)
         setupLayout()
     }
     
@@ -30,34 +30,40 @@ class ViewController: UIViewController {
             print(user.userName.fullName)
         }
     }
-    
+}
+
+// MARK: - Setup View
+extension ViewController {
     private func setupLabel() {
         let randomUser = helper.getUsers().randomElement()?.userName.fullName ?? "Пользователи не найдены..."
-            
+        
         textLabel.text = randomUser
         textLabel.font = .systemFont(ofSize: 25)
         textLabel.textColor = .blue
         textLabel.textAlignment = .center
     }
-
+    
     private func setupStackView() {
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.alignment = .fill
         stackView.spacing = 10
-
-        stackView.addStackViews(textLabel, redCustomButton, greenCustomButton)
-    }
-    
-    private func setupLayout() {
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         
-        NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
-            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            stackView.widthAnchor.constraint(equalToConstant: 230),
-            stackView.heightAnchor.constraint(equalToConstant: 150)
-        ])
+        stackView.addStackViews(textLabel, redCustomButton, greenCustomButton)
     }
 }
 
+// MARK: - Setup Layout
+extension ViewController {
+    private func setupLayout() {
+            stackView.translatesAutoresizingMaskIntoConstraints = false
+            
+            NSLayoutConstraint.activate([
+                stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
+                stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                stackView.widthAnchor.constraint(equalToConstant: 230),
+                stackView.heightAnchor.constraint(equalToConstant: 150)
+            ])
+        }
+
+}
