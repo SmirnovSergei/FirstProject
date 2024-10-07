@@ -7,8 +7,8 @@
 
 import UIKit
 
-class CustomButton: UIView {
-    private let customButton = UIButton()
+class CustomButton: UIButton {
+//    private let customButton = UIButton()
     
     init(buttonTitle: String, buttonColor: UIColor, showShadow: Bool) {
         super.init(frame: .zero)
@@ -31,11 +31,11 @@ class CustomButton: UIView {
 // MARK: - Setup View
 extension CustomButton {
     private func setupButton(buttonTitle: String, buttonColor: UIColor, showShadow: Bool) {
-        customButton.setTitle(buttonTitle, for: .normal)
-        customButton.setTitleColor(.black, for: .normal)
-        customButton.backgroundColor = buttonColor
-        
-        addSubview(customButton)
+        setTitle(buttonTitle, for: .normal)
+        setTitleColor(.black, for: .normal)
+        backgroundColor = buttonColor
+        layer.cornerRadius = 10
+        heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
     
     private func setupShadow() {
@@ -49,13 +49,13 @@ extension CustomButton {
 // MARK: - Setup Layout
 extension CustomButton {
     private func setupLayout() {
-        customButton.translatesAutoresizingMaskIntoConstraints = false
+        translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            customButton.topAnchor.constraint(equalTo: topAnchor),
-            customButton.bottomAnchor.constraint(equalTo: bottomAnchor),
-            customButton.leadingAnchor.constraint(equalTo: leadingAnchor),
-            customButton.trailingAnchor.constraint(equalTo: trailingAnchor)
+            topAnchor.constraint(equalTo: topAnchor),
+            bottomAnchor.constraint(equalTo: bottomAnchor),
+            leadingAnchor.constraint(equalTo: leadingAnchor),
+            trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
     }
 
